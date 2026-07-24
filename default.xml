@@ -3,9 +3,9 @@
   <remote name="github" fetch="https://github.com/"/>
 
   <!-- sdk start -->
-  <project path="." name="kendryte/k230_rtos_sdk" groups="sdk_super" remote="github" revision="main"/>
+  <project path="." name="xr-esp-private/k230_sdk" groups="sdk_super" remote="github" revision="chore/xiaorgeek-fork-build-setup"/>
 
-  <project path="src/uboot/uboot" name="canmv-k230/u-boot" groups="sdk" remote="github" revision="main"/>
+  <project path="src/uboot/uboot" name="xr-esp-private/u-boot" groups="sdk" remote="github" revision="board/xiaorgeek-u-boot"/>
   <project path="src/opensbi/opensbi" name="canmv-k230/opensbi" groups="sdk-common" remote="github" revision="main"/>
 
   <project path="src/rtsmart/rtsmart" name="canmv-k230/rtsmart" groups="sdk" remote="github" revision="main"/>
@@ -27,6 +27,7 @@
   <project path="src/canmv/micropython" name="canmv-k230/micropython" groups="canmv-common" remote="github" revision="canmv_k230"/>
   <project path="src/canmv/micropython/lib/micropython-lib" name="micropython/micropython-lib" groups="canmv-common" remote="github" clone-depth="200" revision="e025c843b60e93689f0f991d753010bb5bd6a722"/>
   <project path="src/canmv/resources/ybsdcard" name="canmv-k230/ybsdcard" groups="canmv-common" remote="github" clone-depth="20" revision="master"/>
+  <project path="src/canmv/resources/xrsdcard" name="xr-esp-private/xrsdcard" groups="canmv-common" remote="github" revision="main"/>
 
   <project path="src/canmv/port/3rd-party/lv_bindings/lvgl" name="lvgl/lvgl" groups="canmv-common" remote="github" clone-depth="2000" revision="1bfdecf585bb50fbb22ed1c38450b5c9eb600196"/>
   <project path="src/canmv/port/3rd-party/lv_bindings/pycparser" name="eliben/pycparser" groups="canmv-common" remote="github" clone-depth="1000" revision="3cf6bf5eb16f5eadd4a058e41596145c407a79ad"/>
